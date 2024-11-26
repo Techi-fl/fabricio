@@ -1,0 +1,36 @@
+name: Typing Animation
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  typing-animation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checar o código
+        uses: actions/checkout@v2
+
+      - name: Executar animação de digitação
+        run: |
+          echo "Iniciando a animação de digitação..."
+          sleep 1
+          echo -n "F"
+          sleep 0.2
+          echo -n "a"
+          sleep 0.2
+          echo -n "b"
+          sleep 0.2
+          echo -n "r"
+          sleep 0.2
+          echo -n "i"
+          sleep 0.2
+          echo -n "c"
+          sleep 0.2
+          echo -n "i"
+          sleep 0.2
+          echo
